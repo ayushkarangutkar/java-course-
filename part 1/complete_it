@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a;
+        float d = 23.4;
+        double s;
+        s=d;
+        i = (int) d;
+        System.out.print("The value of all :- ");
+        System.out.print(s);
+        System.out.print(i);
+    }
+}
