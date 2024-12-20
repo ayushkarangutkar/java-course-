@@ -1,0 +1,21 @@
+// Online Java Compiler
+class Main 
+{
+    public static void main(String[] args) 
+    {
+        int a=89;
+        int b=50;
+        int sum=a+b;
+        int diff=a-b;
+        int mul=a*b;
+        float div=a/b;
+        System.out.print("add = ");
+        System.out.println(sum);
+        System.out.print("sub = ");
+        System.out.println(diff);
+        System.out.print("mul = ");
+        System.out.println(mul);
+        System.out.print("div = ");
+        System.out.println(div);
+    }
+}
