@@ -1,0 +1,30 @@
+/* THE PALINDROME NUMBER */
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int rev=0;
+		int digit,n;
+		n=num;
+		
+		while(num!=0)
+		{
+		    digit=num%10;
+		    rev=rev*10+digit;
+		    num=num/10;
+		}
+		if(n==rev)
+		{
+		    System.out.print(n);
+		    System.out.print(" this number is palindrome. ");
+		}
+		else
+		{
+		    System.out.print(n);
+		    System.out.print(" this number is not palindrome. ");
+		}
+	}
+}
