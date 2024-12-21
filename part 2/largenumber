@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the value of x:- ");
+		int x=sc.nextInt();
+		System.out.print("\n Enter the value of b:- ");
+		int b=sc.nextInt();
+		System.out.print("\n Enter the value of c:- ");
+		int c=sc.nextInt();
+		
+		if((x>b) && (x>c))
+		{
+		    System.out.print(x);
+		    System.out.print("is a greater number");
+		}
+	    else if((b>x) && (b>c))
+		{
+		    System.out.print(b);
+		    System.out.print("is a greater number");
+		}
+		else
+		{
+		    System.out.print(c);
+		    System.out.print("is a greater number");
+		}
+	}
+}
