@@ -1,0 +1,25 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print(" Enter two number :- ");
+		int a = 0;
+		int b = sc.nextInt();
+		int sum=0;
+		
+		while(a)
+		{
+		    a++;
+		    if(a>b)
+		    break;
+		    if(b%a!=0)
+		    continue;
+		    sum=sum+a;
+		}
+		System.out.print("Sum of factors :- ");
+		System.out.print(sum);
+	}
+}
