@@ -1,0 +1,18 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		// CharAt
+		
+		String firstname="Soham";
+		String lastname="kirve";
+		String fullname= firstname+" " +lastname;
+		System.out.print(fullname);
+		
+		System.out.println("\n single Character");
+		for(int i=0;i<fullname.length();i++)
+		{
+		    System.out.println(fullname.charAt(i));
+		}
+	}
+}
