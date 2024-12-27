@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		//concatention(means joing of two or more strings)
+		
+		String firstname="Simba";
+		String lastname="Max";
+		String fullname = firstname+lastname;
+		System.out.println("The the fullname:- "+fullname);
+	}
+}
