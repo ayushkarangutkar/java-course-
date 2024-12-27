@@ -1,0 +1,12 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		//concatention(means joing of two or more strings)
+		//length of strings(means return how much character is there ex.10,20)
+		String firstname="Simba";
+		String lastname="Max";
+		String fullname = firstname+" "+lastname;
+	System.out.println("The the fullname and length of strings :- "+fullname+" & "+fullname.length());
+	}
+}
