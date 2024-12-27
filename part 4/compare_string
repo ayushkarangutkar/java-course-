@@ -1,0 +1,34 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		
+		//compare
+	    Scanner sc=new Scanner(System.in);
+	    System.out.println("Enter the value of two string");
+	    String name1 = sc.next();
+	    String name2 = sc.next();
+		//1 s1>s2: +ve value
+		//2 s1==s2 : 0
+		//3 s1<s2 : -ve value
+		
+		//method 1(which is more efficient)
+		/*
+		if(name1.compareTo(name2) == 0)
+		{
+		    System.out.println("String are equal");
+		}
+		else{
+		    System.out.println("String are not equal");
+		}
+		*/
+		//method 2(which is not efficient)
+		if(name1 == name2)
+		{
+		    System.out.print("String are equal");
+		}
+		else{
+		    System.out.println("String are not equal");
+		}
+	}
+}
