@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+    public static void sum_odd(int k)
+    {
+        int i,num,sum=0;
+        num=k;
+        System.out.print("\nOdd the numbers are :- ");
+        for(i=1;i<num;i++)
+        {
+            if(i%2 != 0)
+            {
+                System.out.println(i);
+                sum=sum+i;
+            }
+        }
+        System.out.print("\n the sum of all odd number :- ");
+        System.out.print(sum);
+        return ;
+    }
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("\nEnter the number: -");
+		int k=sc.nextInt();
+		sum_odd(k);
+	}
+}
