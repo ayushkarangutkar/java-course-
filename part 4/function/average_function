@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main
+{
+    public static void average(int a,int b,int c)
+    {
+        int num1,num2,num3,aver;
+        num1=a;
+        num2=b;
+        num3=c;
+        
+        System.out.print("\n the average of numbers ");
+        aver=num1+num2+num3/3;
+        System.out.print(aver);
+        return ;
+    }
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    
+	    System.out.print("\nEnter the first value :- ");
+	    int a=sc.nextInt();
+	    System.out.print("\nEnter the Second value :- ");
+	    int b=sc.nextInt();
+	    System.out.print("\nEnter the third value :- ");
+	    int c=sc.nextInt();
+	    
+	    average(a,b,c);
+	}
+}
