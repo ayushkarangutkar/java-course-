@@ -1,0 +1,24 @@
+import java.util.*;
+public class Main
+{
+    public static void area(int a,int b)
+    {
+        int length,breadth,area;
+        length=a;
+        breadth=b;
+        
+        area = length*breadth;
+        System.out.print("\nThe area of rectangle :- ");
+        System.out.print(area);
+        return;
+    }
+	public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    System.out.print("\nThe lenght :- ");
+	    int a=sc.nextInt();
+	    System.out.print("\nThe breadth :- ");
+	    int b=sc.nextInt();
+	    
+	    area(a,b);
+	    }
+}
