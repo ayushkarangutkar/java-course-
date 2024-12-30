@@ -1,0 +1,29 @@
+import java.util.*;
+
+class Student 
+{
+    String name;
+    int age;
+    
+    public void accept()
+    {
+        Scanner sc = new Scanner(System.in);
+        name=sc.next();
+        age=sc.nextInt();
+    }
+    public void getinfo()
+    {
+        
+        System.out.println("The name of this Student is "+name);
+        System.out.println("The age of this Student is "+age);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		Student s1 = new Student();
+		s1.accept();
+		s1.getinfo();
+	}
+}
