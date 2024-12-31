@@ -1,0 +1,34 @@
+import java.util.*;
+class create
+{
+    String name;
+    int id;
+    
+    public void accept()
+    {
+        Scanner sc=new Scanner(System.in);
+        name=sc.nextLine();
+        id=sc.nextInt();
+    }
+    
+    public void display()
+    {
+        System.out.print("\nThe name :- "+name);
+        System.out.print("\nThe id :- "+id);
+    }
+    create()
+    {
+        System.out.print("\nThe constructor called");
+    }
+    
+};
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        create s1=new create();
+        s1.accept();
+        s1.display();
+    }
+}
