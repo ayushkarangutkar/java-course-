@@ -1,0 +1,39 @@
+import java.util.*;
+class student
+{
+    String name;
+    int age;
+    int rollno;
+    float percentage;
+    
+    public void acceptinfo()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("\nEnter the name :- ");
+        name=sc.next();
+        System.out.print("\nEnter the age :- ");
+        age=sc.nextInt();
+        System.out.print("\nEnter the roll_no :- ");
+        rollno=sc.nextInt();
+        System.out.print("\nEnter the percentage :- ");
+        percentage=sc.nextFloat();
+        System.out.println();
+    }
+    
+    public void display()
+    {
+        System.out.print("\nThe name :- "+name);
+        System.out.print("\nThe age :- "+age);
+        System.out.print("\nThe roll_no :- "+rollno);
+        System.out.print("\nThe percentage :- "+percentage);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		student s1=new student();
+		s1.acceptinfo();
+		s1.display();
+	}
+}
