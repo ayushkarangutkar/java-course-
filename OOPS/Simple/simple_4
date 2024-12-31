@@ -1,0 +1,35 @@
+import java.util.*;
+class student
+{
+    int num1;
+    int num2;
+    int add;
+    int mul;
+    
+    public void acceptinfo()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("\nEnter the number_1 :- ");
+        num1=sc.nextInt();
+        System.out.print("\nEnter the number_2 :- ");
+        num2=sc.nextInt();
+        System.out.println();
+    }
+    
+    public void display()
+    {
+        add=num1+num2;
+        mul=num1*num2;
+        System.out.print("\nThe addition :- "+add);
+        System.out.print("\nThe multiply :- "+mul);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		student s1=new student();
+		s1.acceptinfo();
+		s1.display();
+	}
+}
