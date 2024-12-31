@@ -1,0 +1,42 @@
+import java.util.*;
+
+class student
+{
+    String name;
+    int age;
+    
+    public void getinfo()
+    {
+        Scanner sc = new Scanner(System.in);
+        name=sc.next();
+        age=sc.nextInt();
+        System.out.print("\nThe name of student is "+name);
+        System.out.print("\nThe age of student is "+age);
+    }
+};
+
+class car 
+{
+    String name;
+    int model;
+    
+    public void getin()
+    {
+        Scanner sc = new Scanner(System.in);
+        name=sc.next();
+        model=sc.nextInt();
+        System.out.print("\nThe name of car is "+name);
+        System.out.print("\nThe model of car is "+model);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		student s1=new student();
+		s1.getinfo();
+		
+		car c1=new car();
+		c1.getin();
+	}
+}
