@@ -1,0 +1,33 @@
+import java.util.*;
+class room
+{
+    String country;
+    int id_no;
+    
+    room(room r2)
+    {
+        this.country=r2.country;
+        this.id_no=r2.id_no;
+    }
+    
+    public void display()
+    {
+        System.out.println("The country name is:- "+this.country);
+        System.out.println("The identity no is:- "+this.id_no);
+    }
+    room()
+    {
+        
+    }
+}
+public class Main
+{
+	public static void main(String[] args)
+	{
+		room r1 = new room();
+		r1.country="America";
+		r1.id_no=7890;
+		room r2=new room(r1);
+		r2.display();
+	}
+}
