@@ -1,0 +1,26 @@
+import java.util.*;
+class car 
+{
+    String name;
+    int age;
+    
+    car(String name,int age)
+    {
+        this.name=name;
+        this.age=age;
+    }
+    
+    public void display()
+    {
+        System.out.print("\nThe name of person is :- "+this.name);
+        System.out.print("\nThe age of person is :- "+this.age);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		car c1=new car("soham",25);
+		c1.display();
+	}
+}
