@@ -1,0 +1,31 @@
+import java.util.*;
+class student
+{
+    String name;
+    int age;
+    
+    public void displayinfo(String name)
+    {
+        System.out.println("The name is :- "+name);
+    }
+    public void displayinfo(int age)
+    {
+        System.out.println("The age is :- "+age);
+    }
+    public void displayinfo(String name,int age)
+    {
+        System.out.println("The name is :- "+name);
+        System.out.println("The age is :- "+age);
+    }
+}
+public class Main
+{
+	public static void main(String[] args)
+	{
+		student s1 = new student();
+		s1.name="Soham";
+		s1.age=25;
+		
+		s1.displayinfo(s1.name,s1.age);
+	}
+}
