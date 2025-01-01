@@ -1,0 +1,31 @@
+/* java does not have destructor so we use finalize that is define in this */
+import java.util.*;
+class power
+{
+    int matches;
+    
+    public void display()
+    {
+        Scanner sc=new Scanner(System.in);
+        matches=sc.nextInt();
+        System.out.print("\nThe matches is played are :- "+matches);
+    }
+    
+    power()
+    {
+        System.out.print("\nThe details ");
+    }
+    public void finalize()// destructor
+    {
+        System.out.print("\nonly this details");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		power p1=new power();
+		p1.display();
+		p1.finalize();
+	}
+}
