@@ -1,0 +1,44 @@
+import java.util.*;
+class syco 
+{
+    String name;
+    double percentage;
+    int age;
+    int weight;
+    
+    syco()
+    {
+        
+    }
+    
+    syco(syco t2)
+    {
+        this.name=t2.name;
+        this.percentage=t2.percentage;
+        this.age=t2.age;
+        this.weight=t2.weight;
+    }
+    
+    public void display()
+    {
+        System.out.println("the name of candidate:- "+this.name);
+        System.out.println("the percentage of candidate:- "+this.percentage);
+        System.out.println("the age of candidate:- "+this.age);
+        System.out.println("the weight of candidate:- "+this.weight);
+    }
+}
+
+public class Main
+{
+    public static void main(String args[])
+    {
+        syco t1= new syco();
+        t1.name="Soham";
+        t1.percentage=98.9;
+        t1.age=25;
+        t1.weight=55;
+        
+        syco t2=new syco(t1);
+        t2.display();
+    }
+}
