@@ -1,0 +1,30 @@
+import java.util.*;
+class sumul 
+{
+   int num1;
+   int num2;
+   int sum;
+   int mul;
+   
+    sumul(int a,int b)
+    {
+        num1=a;
+        num2=b;
+    }
+    
+    public void display()
+    {
+        sum=num1+num2;
+        mul=num1*num2;
+        System.out.print("\nThe addition :- "+" "+sum);
+        System.out.print("\nThe age of person is :- "+" "+mul);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		sumul c1=new sumul(77,77);
+		c1.display();
+	}
+}
