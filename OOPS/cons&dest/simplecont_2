@@ -1,0 +1,27 @@
+import java.util.*;
+class ten
+{
+    String course;
+    int price;
+    
+    public void accept()
+    {
+        Scanner sc=new Scanner(System.in);
+        course=sc.nextLine();
+        price=sc.nextInt();
+    }
+    
+    public void display()
+    {
+        System.out.print("\nThe  course name :- "+course);
+        System.out.print("\nThe price :- "+price);
+    }
+    ten()
+    {
+        System.out.print("\nThe full details\n");
+    }
+    
+};
+
+public class Main
+{
