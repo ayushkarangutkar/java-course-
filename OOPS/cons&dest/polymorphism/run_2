@@ -1,0 +1,53 @@
+import java.util.*;
+class child1
+{
+    String name;
+    int age;
+    
+    public void display()
+    {
+        Scanner sc=new Scanner (System.in);
+        name=sc.nextLine();
+        age=sc.nextInt();
+        System.out.println("The name of student is :- "+name);
+        System.out.println("The age of student is :- "+age);
+    }
+}
+class child2 extends child1
+{
+    int height;
+    
+    public void display()
+    {
+        Scanner sc=new Scanner(System.in);
+        height=sc.nextInt();
+        System.out.println("The height of student is:- "+height);
+    }
+}
+class child3 extends child1
+{
+    int weight;
+    
+    public void display()
+    {
+        Scanner sc = new Scanner(System.in);
+        weight=sc.nextInt();
+        System.out.println("The weight of student is:- "+weight);
+    }
+}
+
+class  Main
+{
+public static void main (String[] args) 
+{
+   child1 c1= new child1();
+   child1 c2= new child2();
+   child1 c3= new child3();
+   
+   c1.display();
+   c2.display();
+   System.out.println();
+   c1.display();
+   c3.display();
+}
+}
