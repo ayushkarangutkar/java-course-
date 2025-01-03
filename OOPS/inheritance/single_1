@@ -1,0 +1,25 @@
+import java.util.*;
+class child1
+{
+    public void accept1()
+    {
+        System.out.println("The first child is child1");
+    }
+}
+class child2 extends child1
+{
+    public void accept2()
+    {
+        System.out.println("The second child is child2");
+    }
+}
+
+ class Main
+{
+    public static void main (String[] args) 
+    {
+       child2 c1=new child2();
+       c1.accept1();
+       c1.accept2();
+    }
+}
