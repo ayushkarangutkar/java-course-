@@ -1,0 +1,41 @@
+import java.util.*;
+abstract class animal
+{
+    abstract void walk();
+    void breathe(){
+        System.out.println("The animal breathers air");
+    }
+    animal()
+    {
+        System.out.println("you are about to create an animal.");
+    }
+}
+class horse extends animal
+{
+    horse(){
+        System.out.println("wow,you have created a horse");
+    }
+    void walk(){
+        System.out.println("Horse walks on 4 legs");
+    }
+}
+class chicken extends animal
+{
+    chicken()
+    {
+        System.out.println("wow,you have created a horse ");
+    }
+    void walk()
+    {
+        System.out.println("Chicken walks on 2 legs");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		horse h1 = new horse();
+		h1.walk();
+		h1.breathe();
+	}
+}
