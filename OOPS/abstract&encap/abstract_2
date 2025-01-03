@@ -1,0 +1,45 @@
+import java.util.*;
+abstract class company
+{
+    abstract void salary();
+    void company()
+    {
+        System.out.println("The company");
+    }
+    company()
+    {
+        System.out.println("The full details is:- ");
+    }
+}
+class employee extends company
+{
+    employee()
+    {
+        System.out.println("The employee");
+    }
+    void salary()
+    {
+        System.out.println("The employee is more in company");
+    }
+}
+class staff extends company
+{
+    staff()
+    {
+        System.out.println("The staff");
+    }
+    void salary()
+    {
+        System.out.println("The staff is less in company");
+    }
+}
+public class Main 
+{
+    public static void main (String[] args) 
+    {
+        employee e1=new employee();
+        e1.company();
+        e1.salary();
+        e1.salary();
+    }
+}
