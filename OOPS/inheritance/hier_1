@@ -1,0 +1,38 @@
+import java.util.*;
+class a
+{
+    public void accept1()
+    {
+        System.out.println("The car is nice ");
+    }
+}
+class b extends a
+{
+    public void accept2()
+    {
+        System.out.println("The person is good");
+    }
+}
+
+class c extends a
+{
+    public void accept3()
+    {
+        System.out.println("The person is best");
+    }
+}
+
+class Main 
+{
+    public static void main(String args[])
+    {
+        b b1=new b();
+        b1.accept2();
+        b1.accept1();
+        
+        c c1=new c();
+        c1.accept3();
+        c1.accept1();
+        
+    }
+}
