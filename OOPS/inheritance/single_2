@@ -1,0 +1,34 @@
+import java.util.*;
+class simba
+{
+    public void accept1()
+    {
+        System.out.println("The topper 1");
+    }
+}
+class max extends simba
+{
+    public void accept2()
+    {
+        System.out.println("The topper 2");
+    }
+}
+class soham extends max
+{
+    public void accept3()
+    {
+        System.out.println("The topper 3");
+    }
+}
+
+class Main
+{
+public static void main (String[] args) {
+    {
+        soham s1 = new soham();
+        s1.accept1();
+        s1.accept2();
+        s1.accept3();
+    }
+}
+}
