@@ -1,0 +1,33 @@
+import java.util.*;
+class area 
+{
+    int num1,num2;
+    int add;
+    int mul;
+    public void accept(int a,int b)
+    {
+        num1=a;
+        num2=b;
+        System.out.println("The number_1 is:- "+num1);
+        System.out.println("The number_2 is:- "+num2);
+    }
+    public void display()
+    {
+        add=num1+num2;
+        mul=num1*num2;
+        System.out.println("The addition :- "+add);
+        System.out.println("The multiply :- "+mul);
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		area a1= new area();
+		int n1,n2;
+		n1=77;
+		n2=77;
+		a1.accept(n1,n2);
+		a1.display();
+	}
+}
