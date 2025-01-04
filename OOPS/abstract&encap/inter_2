@@ -1,0 +1,23 @@
+import java.util.*;
+import java.io.*;
+
+interface In5 {
+  
+    final int age = 30;
+
+    void show();
+}
+class TestClass implements In1 {
+  
+    public void show(){ 
+      System.out.println("soham"); 
+    }
+
+    // Driver Code
+    public static void main(String[] args)
+    {
+        TestClass t = new TestClass();
+        t.display();
+        System.out.println(t.age);
+    }
+}
