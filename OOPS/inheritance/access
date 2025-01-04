@@ -1,0 +1,22 @@
+import java.util.*;
+class account
+{
+    public String name;
+    protected String email;
+    private String password;
+    
+    public void setpassword(String password)
+    {
+        this.password=password;
+    }
+}
+public class sample
+{
+    public static void main(String args[])
+    {
+        account a1=new account();
+        a1.name="Apna college";
+        a1.setpassword("abcd");
+        a1.email="hello@apnacollege";
+    }
+}
