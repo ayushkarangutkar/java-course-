@@ -1,0 +1,34 @@
+import java.util.*;
+class child1  
+{  
+public void displayHuman()  
+{  
+System.out.println("The first child ");  
+}  
+}  
+interface child2  
+{  
+public void show();  
+}  
+interface child3  
+{  
+public void show();  
+}   
+public class Child4 extends child1 implements child2,child3  
+{  
+public void show()  
+{  
+System.out.println("child second and child third ");  
+}    
+public void displayChild()  
+{  
+System.out.println("the last and fourth child");  
+}  
+public static void main(String args[])  
+{  
+Child obj = new Child();  
+System.out.println("the class is says that ");  
+obj.show();  
+obj.displayChild();  
+}  
+} 
