@@ -1,0 +1,42 @@
+import java.util.*;
+class car1 
+{
+   int model;
+   int year;
+   int price;
+   int service;
+  
+   public void accept1()
+   {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("The model:- ");
+       model=sc.nextInt();
+       System.out.print("The year:- ");
+       year=sc.nextInt();
+       System.out.print("Enter the price:- ");
+       price = sc.nextInt();
+       System.out.print("Enter the service :- ");
+       service=sc.nextInt();
+       System.out.println();
+   }
+}
+class car2 extends car1 
+{
+    
+    public void accept2()
+    {
+        System.out.println("The model of car:- "+model);
+        System.out.println("The year of car:- "+year);
+        System.out.println("The price of car:- "+price);
+        System.out.println("The service year of car :- "+service);
+    }
+}
+class Main 
+{
+    public static void main(String args[])
+    {
+        car2 c1=new car2();
+        c1.accept1();
+        c1.accept2();
+    }
+}
