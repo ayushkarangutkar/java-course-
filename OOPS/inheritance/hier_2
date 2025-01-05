@@ -1,0 +1,54 @@
+import java.util.*;
+class a 
+{
+    public void details()
+    {
+        System.out.println("The full details of full course is:- ");
+    }
+}
+class b extends a 
+{
+    String course1;
+    int time1;
+    
+    public void course1()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the course :- ");
+        course1=sc.next();
+        System.out.print("Enter the time :- ");
+        time1=sc.nextInt();
+        System.out.println("The course :- "+course1);
+        System.out.println("The time for this "+time1+" "+"months");
+    }
+}
+class c extends a 
+{
+    String course2;
+    int time2;
+    
+    public void course2()
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the course :- ");
+        course2=sc.next();
+        System.out.print("Enter the time :- ");
+        time2=sc.nextInt();
+        System.out.println("The course :- "+course2);
+        System.out.println("The time for this "+time2);
+    }
+}
+
+class Main 
+{
+    public static void main(String agrs[]) 
+    {
+        b b1 = new b();
+        b1.details();
+        b1.course1();
+        
+        c c1= new c();
+        c1.details();
+        c1.course2();
+    }
+}
