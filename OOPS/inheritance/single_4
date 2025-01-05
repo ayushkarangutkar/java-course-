@@ -1,0 +1,26 @@
+import java.util.*;
+class circle 
+{
+    int radius;
+    double area;
+    public void accept()
+    {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("enter the radius :- ");
+        radius=sc.nextInt();
+    }
+    public void display()
+    {
+        area=3.14*radius*radius;
+        System.out.println("The area of circle :- "+area);
+    }
+}
+class Main 
+{
+public static void main (String[] args) 
+{
+    circle p1=new circle();
+    p1.accept();
+    p1.display();
+}
+}
