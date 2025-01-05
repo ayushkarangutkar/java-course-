@@ -1,0 +1,36 @@
+import java.util.*;
+class student 
+{
+    public void display() 
+    {
+        System.out.println("The first things ");
+    }
+}
+interface test 
+{
+    public void show();
+}
+interface sports 
+{
+    public void show();
+}
+class result extends student implements test,sports 
+{
+    public void show()
+    {
+    System.out.println("The result is says that good ");
+    }
+    public void displayresult() 
+    {
+        System.out.println("The display");
+    }
+}
+public class Main
+{
+	public static void main(String[] args) 
+	{
+	   result r1=new result();
+	   r1.show();
+	   r1.displayresult();
+	}
+}
