@@ -14,7 +14,7 @@ interface child3
 {  
 public void show();  
 }   
-public class Child4 extends child1 implements child2,child3  
+class Child4 extends child1 implements child2,child3  
 {  
 public void show()  
 {  
@@ -23,12 +23,15 @@ System.out.println("child second and child third ");
 public void displayChild()  
 {  
 System.out.println("the last and fourth child");  
-}  
+}
+}
+class Main
+{
 public static void main(String args[])  
 {  
-Child obj = new Child();  
+Child4 obj = new Child4();  
 System.out.println("the class is says that ");  
 obj.show();  
 obj.displayChild();  
 }  
-} 
+}
