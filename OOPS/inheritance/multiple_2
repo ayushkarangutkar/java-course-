@@ -1,0 +1,40 @@
+interface GPI {
+
+    default void student()
+    {
+       int rollno=1109;
+       System.out.println("The roll_no is "+rollno);
+    }
+}
+
+interface PI1 extends GPI {
+    
+    default void test() 
+    {
+        int test=275;
+        System.out.println("The testmarks is "+test);
+    }
+}
+
+interface PI2 extends GPI {
+    
+    default void sport() 
+    {
+        int sport=100;
+        System.out.println("The sports is "+sport);
+    }
+}
+
+class TestClass implements PI1, PI2 {
+     
+}
+class Main {
+    // Main driver method
+    public static void main(String args[])
+    {
+        TestClass d = new TestClass();
+        d.student();
+        d.test();
+        d.sport();
+    }
+}
