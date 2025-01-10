@@ -1,0 +1,80 @@
+import java.util.*;
+class calculator 
+{
+    calculator() 
+    {
+        System.out.println(" THE DIGITAL CALCULATOR ");
+    }
+    
+    public void accept1(int n)
+    {
+        int a=n;
+        int b,c,d,choice;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("\n1.ADD \n2.SUB \n3.MUL \n4.DIV \n ");
+        System.out.println("\nEnter the operator as per number:- ");
+        System.out.print("Choice = ");
+        choice=sc.nextInt(); 
+        System.out.println("Enter the value");
+        System.out.print("NUM1 = ");
+        b=sc.nextInt();
+        System.out.print("NUM2 = ");
+        c=sc.nextInt();
+        switch(choice)
+        {
+            case 1 :c=a+b;
+                    System.out.println(a+" + "+b+" = "+c);
+                    break;
+            case 2: c=a-b;
+                    System.out.println(a+" - "+b+" = "+c);
+                    break;
+            case 3 :c=a*b;
+                    System.out.println(a+" * "+b+" = "+c);
+                    break;
+            case 4:c=a/b;
+                    System.out.println(a+" / "+b+" = "+c);
+                    break;
+            default:System.out.println("Wrong choice");
+        } 
+    }
+    
+    public void accept2(String t) 
+    {
+        String f=t;
+        float num,res;
+        int want;
+        float pi=3.14159265;
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.print("\n1.SQRT \n2.SIN \n3.COS \n4.TAN \n");
+        System.out.println("Enter the operator as per number");
+        System.out.print("choice = ");
+        want=sc.nextInt();
+        System.out.print("Enter the value ");
+        System.out.print("NUM = ");
+        num=sc.nextInt();
+        switch(want)
+        {
+            case 1 :res=num*num;
+                    System.out.println(num+" + "+num+" = "+res);
+                    break;
+            case 2: res=sin(num*pi/180);
+                    System.out.println("The sine of "+num+"the degree is"+res);
+                    break;
+            case 3 :res=cos(num*pi/180);
+                    System.out.println("The cose of "+num+"the degree is"+res);
+                    break;
+            case 4:res=tan(num*pi/180);
+                   System.out.println("The tane of "+num+"the degree is"+res);
+                    break;
+            default:System.out.println("Wrong choice");
+        } 
+    }
+}
+public class Calculator
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}
