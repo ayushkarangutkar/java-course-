@@ -1,3 +1,5 @@
+
+import java.lang.Math;
 import java.util.*;
 class calculator 
 {
@@ -43,7 +45,7 @@ class calculator
         String f=t;
         float num,res;
         int want;
-        float pi=3.14159265;
+        double pi=3.14159265;
         
         Scanner sc=new Scanner(System.in);
         System.out.print("\n1.SQRT \n2.SIN \n3.COS \n4.TAN \n");
@@ -75,6 +77,31 @@ public class Calculator
 {
 	public static void main(String[] args) 
 	{
+		Scanner sc=new Scanner(System.in);
+		calculator c1;
+		String a;
+		int n;
+		String p;
+		String d;
+		System.out.println("Enter the number or name:- ");
+		p=sc.next();
 		
+		do 
+		{
+		    if(p!="purvamadam")
+		    {
+		        System.out.println("The number :- ");
+		        n=sc.nextInt();
+		        c1.accept1(n);
+		    }
+		    else 
+		    {
+		        System.out.println("The name:- ");
+		        a=sc.next();
+		        c1.accept2(a);
+		    }
+		    System.out.println("Enter N to exit or Y to enter : \n");
+		    d=sc.next();
+		}while(d!='N');
 	}
 }
