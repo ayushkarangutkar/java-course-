@@ -1,0 +1,131 @@
+import java.lang.Math;
+import java.util.*;
+
+class Calculator 
+{
+    //constructor decalred 
+    Calculator() 
+    {
+        System.out.println(" THE DIGITAL CALCULATOR ");
+    }
+    
+    // Method for performing basic arithmetic operations
+    public static void accept1(int n) {
+        int a = n;
+        int b, c, choice;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("\n1. ADD \n2. SUB \n3. MUL \n4. DIV");
+        System.out.print("\nEnter the operator as per number: ");
+        choice = sc.nextInt(); 
+        
+        System.out.println("Enter the values:");
+        System.out.print("NUM1 = ");
+        b = sc.nextInt();
+        System.out.print("NUM2 = ");
+        c = sc.nextInt();
+        
+        switch (choice) {
+            case 1:
+                c = a + b;
+                System.out.println(a + " + " + b + " = " + c);
+                break;
+            case 2:
+                c = a - b;
+                System.out.println(a + " - " + b + " = " + c);
+                break;
+            case 3:
+                c = a * b;
+                System.out.println(a + " * " + b + " = " + c);
+                break;
+            case 4:
+                if (b != 0) {
+                    c = a / b;
+                    System.out.println(a + " / " + b + " = " + c);
+                } else {
+                    System.out.println("Error! Division by zero.");
+                }
+                break;
+            default:
+                System.out.println("Wrong choice");
+        }
+    }
+    
+    // Method for performing trigonometric operations and square root
+    public static void accept2(String t) 
+    {
+        String f = t;
+        double num, res;
+        int want;
+        double pi = 3.14159265;
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("\n1. SQRT \n2. SIN \n3. COS \n4. TAN");
+        System.out.print("Enter the operator as per number: ");
+        want = sc.nextInt();
+        
+        System.out.print("Enter the value NUM: ");
+        num = sc.nextDouble();
+        
+        switch (want) 
+        {
+            case 1:
+                res = num*num;
+                System.out.println("Square root of " + num + " is " + res);
+                break;
+            case 2:
+                res = Math.toRadians(num);
+                System.out.println("Sin(" + num + "°) = " + Math.sin(res));
+                break;
+            case 3:
+                res = Math.toRadians(num);
+                System.out.println("Cos(" + num + "°) = " + Math.cos(res));
+                break;
+            case 4:
+                res = Math.toRadians(num);
+                System.out.println("Tan(" + num + "°) = " + Math.tan(res));
+                break;
+            default:
+                System.out.println("Wrong choice");
+        }
+    }
+}
+
+public class Calculator
+{
+    public static void main(String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        Calculator c1 = new Calculator();
+        String p, a;
+        int n, d;
+        
+        System.out.println("Enter the number or name: ");
+        p = sc.next();
+        
+        do 
+        {
+            if (!p.equals("purvamadam")) 
+            { 
+                System.out.println("Enter a number for operation:");
+                n = sc.nextInt();
+                Calculator.accept1(n);
+            } else {
+                System.out.println("Enter your name: ");
+                a = sc.next();
+                Calculator.accept2(a);
+            }
+            
+            System.out.println("Enter N to exit or Y to continue: ");
+            char choice = sc.next().charAt(0);  // Use char for Y/N input
+            if (choice == 'n' || choice == 'N') 
+            {
+                break;  // Exit loop if 'n' or 'N' is entered
+            }
+            
+        } while (true);
+        
+        System.out.println("Thank you for using the Digital Calculator!");
+    }
+}
