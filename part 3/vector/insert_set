@@ -1,0 +1,17 @@
+import java.util.Vector;
+
+public class Main 
+{
+    public static void main(String args[])
+    {
+        Vector v = new Vector<>();
+        
+        v.addElement("PHP");
+        v.addElement("Python");
+        v.addElement("Ruby");
+        
+        v.insertElementAt("c#",2);
+        v.setElementAt("COLABA",1);
+        System.out.println(v);
+    }
+}
