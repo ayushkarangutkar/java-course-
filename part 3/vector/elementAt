@@ -1,0 +1,14 @@
+import java.util.Vector;
+
+public class Main 
+{
+    public static void main(String [] args)
+    {
+        Vector v=new Vector<>();
+        
+        v.addElement("denis sir");
+        v.addElement(new Integer(20));
+        
+        System.out.print(v.elementAt(1));
+    }
+}
