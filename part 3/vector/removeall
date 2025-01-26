@@ -1,0 +1,19 @@
+import java.util.Vector;
+
+public class Main 
+{
+    public static void main(String args[]){
+        
+        Vector<String> v = new Vector<>();
+        
+        v.addElement("low confidence");
+        v.addElement("lazy");
+        v.addElement("no time");
+        v.addElement("no consistency");
+        
+        v.removeAllElements();
+        
+        System.out.println("All elements should be removed.");
+        System.out.println("Current vector: " + v);  // This will print an empty vector.
+    }
+}
