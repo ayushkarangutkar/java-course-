@@ -1,0 +1,15 @@
+import java.util.Vector;
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Vector v = new Vector<>();
+        
+        v.addElement("java");
+        v.addElement("C++");
+        
+        System.out.println("size of :- "+v.size());
+        System.out.println("capacity of :- "+v.capacity());
+    }
+}
