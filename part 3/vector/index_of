@@ -1,0 +1,29 @@
+/*
+indexOf(object element)
+it return the index of first occurrence of element 
+if the object is not found in the vector,- 1 is returned.
+*/
+
+/*
+indexOf(object element,int start)
+it return the index of first occurence of element at or after stat index
+if the object is not in that portion of vector,- 1 is returned
+*/
+/*
+import java.util.Vector;
+
+public class Main 
+{
+    public static void main(String args[])
+    {
+        Vector v = new Vector<>();
+        
+        v.addElement("java");
+        v.addElement("c++");
+        v.addElement("Ruby");
+        v.addElement("java");
+        System.out.println(v.indexOf("c++"));
+        System.out.println(v.indexOf("java",2));
+        
+    }
+}
