@@ -1,0 +1,11 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) 
+	{
+		StringBuffer sb = new StringBuffer("Simbamax");
+		
+		sb.insert(5,"kumar");
+		System.out.println("The full name:- "+sb);
+	}
+}
