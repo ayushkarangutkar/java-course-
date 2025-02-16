@@ -1,0 +1,28 @@
+import java.util.*;
+class Main
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        int size,k;
+        System.out.println("Enter the size :-");
+        size =sc.nextInt();
+        int arr[] =new int[size];
+        System.out.println("Enter the element :- ");
+        for(k=0;k<size;k++)
+        {
+            arr[k] = sc.nextInt();
+        }
+        System.out.println("The smallest number:- ");
+        int min = arr[0];
+        for(int i = 0; i<size;i++)
+        {
+            if(min>arr[i])
+            {
+                min=arr[i];
+            }
+        }
+        System.out.println("The smallest the number is :- "+min);
+        
+    }
+}
