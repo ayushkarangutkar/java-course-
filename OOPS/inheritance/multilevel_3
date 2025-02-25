@@ -1,0 +1,61 @@
+import java.util.*;
+class student
+{
+ int rollno;
+ String name;
+ 
+ Scanner sc = new Scanner(System.in);
+ void get1()
+ {
+    System.out.print("Enter name - ");
+    name = sc.nextLine();
+    System.out.print("Enter roll no - ");
+    rollno = sc.nextInt();
+ }
+}
+
+class exam extends student 
+{
+  int m1,m2,m3;
+  
+  Scanner sc = new Scanner(System.in);
+  void get2() 
+  {
+    System.out.println("Enter the marks for 3 subject :- ");
+    System.out.print("Enter marks of subject 1 - ");
+    m1 = sc.nextInt();
+    System.out.print("Enter marks of subject 2 - ");
+    m2 = sc.nextInt();
+    System.out.print("Enter marks of subject 3 - ");
+    m3 = sc.nextInt();
+  }
+}
+class result extends exam 
+{
+  float percentage;
+  
+  void calculate() 
+  {
+     percentage = (m1+m2+m3)/3;
+  }
+  void display() 
+  {
+    System.out.println("Name :- "+name);
+    System.out.println("roll no  :- "+rollno);
+    System.out.println("marks 1 :- "+m1);
+    System.out.println("marks 2 :- "+m2);
+    System.out.println("marks 3 :- "+m3);
+    System.out.println("percentage :- "+percentage);
+   }
+}
+class multilevel 
+{
+public static void main(String args[])
+{
+  result r = new result();
+  r.get1();
+  r.get2();
+  r.calculate();
+  r.display();
+}
+}
